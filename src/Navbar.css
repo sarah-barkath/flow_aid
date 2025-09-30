@@ -1,0 +1,84 @@
+nav {
+    background-color: #0f4662;
+    padding: 5px 20px;  /* Reduced padding to shrink height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;  /* Set a fixed height */
+    min-height: 50px;  /* Ensures it doesn't stretch */
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px; /* Reduce gap between nav items */
+    align-items: center; /* Ensures vertical alignment */
+}
+  
+nav h1{
+    color: white;
+    font-size: 35px;
+}
+
+nav a, nav button {
+    text-decoration: none;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+nav a:hover, nav button:hover {
+    color: lightgray;
+}
+  
+.relative {
+    position: relative;
+    padding: 8px 15px;
+}
+  
+.absolute {
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+}
+  
+.relative:hover .absolute {
+    display: flex;
+}
+  
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px; /* Uniform padding */
+    text-decoration: none;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    min-width: 100px; /* Ensures all items have the same width */
+    text-align: center;
+}
+
+.nav-item:hover {
+    color: lightgray;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .dropdown-item:hover {
+    background-color: gray;
+  }
