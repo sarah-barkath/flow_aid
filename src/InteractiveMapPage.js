@@ -65,39 +65,43 @@ const InteractiveMapPage = () => {
 
   // Function to find the best NGO when a disaster is hovered
   const findBestNGO = (disaster) => {
-    const threshold = disaster.severity === 'moderate' ? 50 : 150;
+  setBestNGO([]); // clear old data
 
-    const ngosWithDistance = ngos.map((ngo) => ({
-      ...ngo,
-      distance: calculateDistance(disaster.coords, ngo.coords),
-    }));
+  const threshold = disaster.severity.toLowerCase() === 'moderate' ? 50 : 150;
 
-    const closestNGO = ngosWithDistance.reduce(
-      (closest, ngo) => (ngo.distance < closest.distance ? ngo : closest),
-      ngosWithDistance[0]
-    );
+  const ngosWithDistance = ngos.map((ngo) => ({
+    ...ngo,
+    distance: calculateDistance(disaster.coords, ngo.coords),
+  }));
 
-    if (disaster.severity === 'high') {
-      setBestNGO([{ ...closestNGO, distance: closestNGO.distance.toFixed(2) }]);
-      return;
-    }
+  const closestNGO = ngosWithDistance.reduce(
+    (closest, ngo) => (ngo.distance < closest.distance ? ngo : closest),
+    ngosWithDistance[0]
+  );
 
-    const validNGOs = ngosWithDistance.filter((ngo) => ngo.distance <= threshold);
+  // ✅ Only show one NGO for high severity
+  if (disaster.severity.toLowerCase() === 'high') {
+    setBestNGO([{ ...closestNGO, distance: closestNGO.distance.toFixed(2) }]);
+    return;
+  }
 
-    const leastResourceNGO = validNGOs.reduce(
-      (least, ngo) => (ngo.resources < least.resources ? ngo : least),
-      validNGOs[0]
-    );
+  const validNGOs = ngosWithDistance.filter((ngo) => ngo.distance <= threshold);
 
-    if (leastResourceNGO) {
-      setBestNGO([
-        { ...closestNGO, distance: closestNGO.distance.toFixed(2) },
-        { ...leastResourceNGO, distance: leastResourceNGO.distance.toFixed(2) },
-      ]);
-    } else {
-      setBestNGO([{ ...closestNGO, distance: closestNGO.distance.toFixed(2) }]);
-    }
-  };
+  const leastResourceNGO = validNGOs.reduce(
+    (least, ngo) => (ngo.resources < least.resources ? ngo : least),
+    validNGOs[0]
+  );
+
+  if (leastResourceNGO) {
+    setBestNGO([
+      { ...closestNGO, distance: closestNGO.distance.toFixed(2) },
+      { ...leastResourceNGO, distance: leastResourceNGO.distance.toFixed(2) },
+    ]);
+  } else {
+    setBestNGO([{ ...closestNGO, distance: closestNGO.distance.toFixed(2) }]);
+  }
+};
+
 
   return (
     <div style={{ height: "100vh", width: "100%" }}>
