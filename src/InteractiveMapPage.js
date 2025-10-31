@@ -68,6 +68,11 @@ const InteractiveMapPage = () => {
   { id: 43, name: "Cloistered Carmel Ashram", coords: [10.964017714325786, 79.40632040096393], resources: 50},
   { id: 44, name: "Rural Reconstruction And Rehabilitation Educational Society", coords: [14.410525411739084, 79.95144704890613], resources: 55},
   { id: 45, name: "Chaitanya Jyothi Welfare Society", coords: [14.407176462974641, 79.95718415993028], resources: 70},
+  { id: 46, name: "The Akshaya Patra Foundation in Visakhapatnam", coords: [18.078017918938304, 83.42885601292232], resources: 76},
+  { id: 47, name: "The Akshaya Patra Foundation", coords: [13.790111294927353, 80.37465685457833], resources: 50},
+  { id: 48, name: "Andhra Pradesh Vaidya Vidhana Parishad Office Of The District Coordinator Of Hospital Services", coords: [17.52727638688455, 82.99754878639739], resources: 100},
+  { id: 49, name: "DBRC", coords: [16.347650835255486, 80.44534184894759], resources: 69},
+  { id: 50, name: "Education, Cultural, and Health Organization (ECHO)", coords: [14.968666649576974, 78.18871394230568], resources: 77},
 ];
 
 
