@@ -55,6 +55,19 @@ const InteractiveMapPage = () => {
   { id: 30, name: "Nanhi Kali", coords: [12.9716, 77.5946], resources: 55 }, // Bengaluru
   { id: 31, name: "VITAP FOUNDATION", coords: [14.8476, 80.4045], resources: 60 }, // Bengaluru
   { id: 32, name: "SRM FOUNDATION", coords: [14.1726, 79.7075], resources: 30 }, // Bengaluru
+  { id: 33, name: "Kashi Educare Society", coords: [25.351027121323774, 82.94456403201553], resources: 70},
+  { id: 34, name: "Dharma Chakra Mul Boudh Sodh Sansthan", coords: [25.373586989955232, 83.03110831515488], resources: 50},
+  { id: 35, name: "Akanksha Foundation", coords: [18.54021612229653, 73.8561008469484], resources: 80},
+  { id: 36, name: "Bharatiya Samaj Seva Kendra", coords: [18.535393239501893, 73.8990584029704], resources: 40},
+  { id: 37, name: "Lok Chetna Vikas Samiti(LCVS NGO)", coords: [29.618987725383818, 79.72302633398739], resources: 40},
+  { id: 38, name: "Central Himalayan Environment Association (CHEA)", coords: [29.393724738355814, 79.45112610147505], resources: 65},
+  { id: 39, name: "Sri Arunodayam Charitable Trust", coords: [13.124699075851629, 80.2020643806401], resources: 65},
+  { id: 40, name: "SOS Children's Village Bhubaneswar", coords: [20.285926914920505, 85.77675864110785], resources: 75},
+  { id: 41, name: "Orissa Voluntary Health Association", coords: [20.267176756291086, 85.84839652206209], resources: 70},
+  { id: 42, name: "Kumbakonam Multipurpose Social Service Society", coords: [10.957066053330427, 79.38794364884487], resources: 30},
+  { id: 43, name: "Cloistered Carmel Ashram", coords: [10.964017714325786, 79.40632040096393], resources: 50},
+  { id: 44, name: "Rural Reconstruction And Rehabilitation Educational Society", coords: [14.410525411739084, 79.95144704890613], resources: 55},
+  { id: 45, name: "Chaitanya Jyothi Welfare Society", coords: [14.407176462974641, 79.95718415993028], resources: 70},
 ];
 
 
