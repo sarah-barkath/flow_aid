@@ -54,7 +54,7 @@ const InteractiveMapPage = () => {
   { id: 29, name: "Butterflies", coords: [19.0760, 72.8777], resources: 35 }, // Mumbai
   { id: 30, name: "Nanhi Kali", coords: [12.9716, 77.5946], resources: 55 }, // Bengaluru
   { id: 31, name: "VITAP FOUNDATION", coords: [14.8476, 80.4045], resources: 60 }, // Bengaluru
-  { id: 32, name: "SRM FOUNDATION", coords: [14.1726, 79.7075], resources: 30 }, // Bengaluru
+  { id: 32, name: "Indian Red Cross", coords: [14.1726, 79.7075], resources: 30 }, // Bengaluru
   { id: 33, name: "Kashi Educare Society", coords: [25.351027121323774, 82.94456403201553], resources: 70},
   { id: 34, name: "Dharma Chakra Mul Boudh Sodh Sansthan", coords: [25.373586989955232, 83.03110831515488], resources: 50},
   { id: 35, name: "Akanksha Foundation", coords: [18.54021612229653, 73.8561008469484], resources: 80},
