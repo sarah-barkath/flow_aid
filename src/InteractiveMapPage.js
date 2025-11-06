@@ -73,6 +73,7 @@ const InteractiveMapPage = () => {
   { id: 48, name: "Andhra Pradesh Vaidya Vidhana Parishad Office Of The District Coordinator Of Hospital Services", coords: [17.52727638688455, 82.99754878639739], resources: 100},
   { id: 49, name: "DBRC", coords: [16.347650835255486, 80.44534184894759], resources: 69},
   { id: 50, name: "Education, Cultural, and Health Organization (ECHO)", coords: [14.968666649576974, 78.18871394230568], resources: 77},
+  { id: 51, name: "Human Organisation for People’s Enlightment (HOPE) NGO", coords: [13.211832088139936, 79.12636772485942], resources: 40},
 ];
 
 
